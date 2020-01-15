@@ -3,10 +3,10 @@ import numpy as np
 class Problem:
 	def __init__(self, file_name):
 		f = open(file_name, "r")
-		self.N = int(f.readline())
+		self.N = 200
 		self.c = [int(i) for i in f.readline().split(' ')]
-		self.ld = [int(i) for i in f.readline().split(' ')]
-		self.ud = [int(i) for i in f.readline().split(' ')]
+		# self.ld = [int(i) for i in f.readline().split(' ')]
+		# self.ud = [int(i) for i in f.readline().split(' ')]
 		self.s0 = [int(i) for i in f.readline().split(' ')]
 		self.V = int(f.readline())
 		self.k = [int(i) for i in f.readline().split(' ')]
